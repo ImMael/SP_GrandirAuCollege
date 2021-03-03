@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
+<link rel="stylesheet" href="College.css">
+
+<title>Page Collèges</title>
+</head>
+
+<body>
+    <div class="Title">Page collèges</div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Accueil</a>
+        <a href="#">Collèges</a>
+        <a href="#">Ados</a>
+        <a href="#">Prescripteur</a>
+        <a href="#">Parents</a>
+        <a href="#">A propos</a>
+      </div>
+      
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
+    <div class="Container paper">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum</p>
+        <div id="contact" class="container-fluid">
+            <div class="item">Nous contacter:</div>
+            <form role="form" id="contactForm" onsubmit="submitContactForm(event)">
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="name" class="h4">Vous êtes :</label>
+                        <select name="Qui" id="Qui">
+                            <option value="Collège">Un collège</option>
+                            <option value="Prescripteur">Un prescripteur</option>
+                            <option value="Ado">Un ado</option>
+                            <option value="Parent">Un parent</option>
+                        </select>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="name" class="h4">Votre nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="email" class="h4">Votre email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="h4 ">Message</label>
+                    <textarea id="message" class="form-control" rows="5"
+                        placeholder="Entrez votre message ou vos questions ici" required></textarea>
+                </div>
+                <button type="submit" id="form-submit" class="submit" onclick="Submit">Envoyer
+                </button>
+                <button type="button" class="cancel" data-dismiss="modal">Annuler
+                </button>
+                <!--***************FIN FORMULAIRE DE CONTACT ******************-->
+            </form>
+            <h3>Devis en ligne:</h3>
+<p> </p>
+<p><span style="font-size: small; font-family: verdana, geneva; color: #ff0000;"><strong>Calculer le coût indicatif de
+            votre correction</strong></span></p>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<p> </p>
+<form id="testform"><span style="font-size: small;"><strong><label>Nombre de livres voulu</label></strong></span><input
+        id="nbchar" type="nombre" name="nbchar" value="0" /><br /> <span style="font-size: small;"><label>
+            </select><input type="submit" value="Calculer" /></form>
+<div id="resultat"> </div>
+<p> </p>
+<script type="text/javascript">// <![CDATA[
+    $(function () {
+
+        $("input:submit").click(
+            function () {
+                var calcul = 0;
+                if ($("input:checked").val() == 1) {
+                    if ($("#formjur").val() == 1) {
+                        calcul = $("#nbchar").val() * 0.0029;
+                    } else if ($("#formjur").val() == 2) {
+                        calcul = $("#nbchar").val() * 0.0033;
+                    } else {
+                        calcul = $("#nbchar").val() * 0.0025;
+                    }
+                } else {
+                    if ($("#formjur").val() == 1) {
+                        calcul = $("#nbchar").val() * 0.004375;
+                    } else if ($("#formjur").val() == 2) {
+                        calcul = $("#nbchar").val() * 0.005;
+                    } else {
+                        calcul = $("#nbchar").val() * 0.00375;
+                    }
+                }
+                var resultat = Math.ceil(calcul);
+                $("#resultat").html("Le montant indicatif de votre devis est de <b>" + resultat + "<b> &euro;");
+                return false;
+            }
+
+        );
+
+    });
+        
+    
+// ]]></script>
+
+</body>
+</div>
+
+</html>
+
+<script type="text/javascript">
+    function Submit() {
+
+        if (document.getElementById('checkBox').checked)
+            document.getElementById('texto').innerHTML = "Message envoyé";
+    }
