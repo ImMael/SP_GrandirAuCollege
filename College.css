@@ -1,29 +1,49 @@
-.Title{width: auto;
-    height: 70px;
+.page_head {
     display: flex;
+    height: 5%;
+    width: 100%;
     justify-content: center;
-    font-size: 50px;
-    background-color: #EAEAEA;}
-
+    align-items: center;
+}
 .cancel{background-color: #EF74A4;
 
 }
 
 .submit{background-color: #51C7E7;}
 
-.container-fluid{background-color: #E9D56A;
-    padding: 10px;}
+.container-fluid{
+    font-size: 3em;
+    line-height: 1;
+    text-align:center;
+    max-width: 800px;
+    width: auto;
+    margin: 25px;
+    max-height:1400px;
+    position: relative;
+    border:1px solid #d0d0d0;
+    border-top:60px solid #fdfd86;
+    font-size:3em;
+    border-bottom-right-radius: 60px 5px;
+    display:inline-block;
+    background: #ffff88; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+    background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 
 .paper{margin-top: auto;
     margin-bottom: auto;
     border: none;
-    background-color: #e9e9e9;}
+    background-color: white;}
 
 .form-group {padding: 3px;}
 
 body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
+    background-color: white;
   }
   
   .sidenav {
@@ -43,13 +63,13 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color:white;
     display: block;
     transition: 0.3s;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: white;
   }
   
   .sidenav .closebtn {
@@ -71,3 +91,29 @@ body {
   }
 
   a{background-image: none !important;}
+
+  .item{font-size: 50px;}
+  .row{justify-content: center;}
+  .h4{font-size: 30px;}
+  textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+#logo_gac{
+    height:50px;
+    border-style:hidden !important;
+}
+head{display: none;}
+
+.container2{
+    display: flex;
+    justify-content: center ;
+}
+
+p{margin:10px;}
