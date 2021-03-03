@@ -1,0 +1,279 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+/** PAGE COMPLETE **/
+.page_container{
+    display:flex;
+    width:100vw;
+    height: 260vh;
+    flex-direction: column;
+}
+/** **/
+/** PAGE HEADER **/
+
+.page_head {
+    display: flex;
+    height: 5%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_gac{
+    height:50px;
+    border-style:hidden !important;
+}
+/** PAGE HEADER **/
+.page_content{
+    display:flex;
+    height:90%;
+    width:100%;
+    flex-direction: column;
+}
+.gac_laius{
+    display:flex;
+    height:12%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gac_laius p{
+    width:80%;
+}
+.parallax {
+    background-image: url("src/img_parallax.jpeg");
+    height: 15%;
+    background-attachment: fixed;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax .title_parallax{
+    color:white;
+    display:flex;
+    height:100%;
+    width: 30%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.parallax2 {
+    background-image: url("src/img_parallax2.jpeg");
+    height: 15%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 .title_parallax2{
+    color:white;
+    display:flex;
+    height:100%;
+    width: 30%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.team_desc{
+    display:flex;
+    height:25%;
+    width:100%;
+    flex-flow: row wrap;
+}
+.f_mb{
+    display:flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 33.33%;
+    height: 100%;
+}
+.s_mb{
+    display:flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 33.33%;
+    height: 100%;
+}
+.t_mb{
+    display:flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 33.33%;
+    height: 100%;
+}
+.picture_mb{
+    height:130px;
+    width: 130px;
+}
+.title_mb{
+    text-align: center;
+
+}
+.mb_medias a{
+    color:gray;
+}
+.mb_medias a:hover{
+    text-decoration: none;
+    color:#22A8BD;
+
+}
+.mb_medias{
+    cursor:pointer;
+}
+.mb_medias i{
+    text-decoration: none;
+}
+.contributors{
+    display:flex;
+    height:40%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.orient_btn{
+    margin-right: 10px;
+    margin-top:10px;
+}
+.about_modal{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.title_contribs{
+    display:flex;
+    height:30%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.list_contribs{
+    display:flex;
+    height:50%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contribs_row{
+    display:flex;
+    flex-flow: row wrap;
+    margin-top: 70px;
+    overflow-wrap: normal;
+    justify-content: center;
+    align-items: center;
+}
+.contribs_row p{
+    margin-right: 10px;
+    white-space: nowrap;
+
+}
+.contribs_row p:hover{
+    color:#EF74A4;
+    text-shadow: 1 0 120px #EF74A4;
+}
+
+/* PAGE ABOUT */
+
+.about_container{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.post_container{
+    display:flex;
+    height:60%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nobg{
+    background:none;
+}
+.postit {
+    line-height: 1;
+    text-align:center;
+    width: 275px;
+    margin: 25px;
+    min-height:250px;
+    max-height:250px;
+    position:relative;
+    border:1px solid #d0d0d0;
+    border-top:60px solid #fdfd86;
+    font-size:3em;
+    border-bottom-right-radius: 60px 5px;
+    display:inline-block;
+    background: #ffff88; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+    background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.postit:after {
+    content: "";
+    position:absolute;
+    z-index:-1;
+    right:-0px; bottom:20px;
+    width:200px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+    -moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    transform: matrix(-1, -0.1, 0, 1, 0, 0);
+
+}
+
+.rotate {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
+.post_medias{
+    display:flex;
+    height:25%;
+    width: 100%;
+    background: #fff;
+    box-shadow:
+        /* The top layer shadow */
+            0 1px 1px rgba(0,0,0,0.15),
+                /* The second layer */
+            0 10px 0 -5px #eee,
+                /* The second layer shadow */
+            0 10px 1px -4px rgba(0,0,0,0.15),
+                /* The third layer */
+            0 20px 0 -10px #eee,
+                /* The third layer shadow */
+            0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.med_post{
+    display:flex;
+    height:30%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.med_post a{
+    margin-right: 10px;
+    color:#41403e;
+}

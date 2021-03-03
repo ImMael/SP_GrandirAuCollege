@@ -1,0 +1,30 @@
+@media screen and (max-device-width : 430px) {
+    /*v.gac_laius{
+        height:5%;
+    }
+    .page_head{
+        height:3%;
+    }
+    .parallax, .parallax2{
+        height:7%;
+    }
+    .team_desc{
+        height:12%;
+    } */
+    .page_container{
+        height:125vh;
+    }
+    .gac_laius p{
+        font-size: 27px;
+    }
+    .parallax .title_parallax, .parallax2 .title_parallax2{
+        width:50%;
+    }
+    .parallax2 {
+        background-attachment: initial;
+        background-position: bottom;
+    }
+    .parallax{
+        background-position: top;
+    }
+}
