@@ -1,10 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <link href="https://unpkg.com/papercss@1.8.2/dist/paper.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossorigin="anonymous"/>
+    <link href="style.css" rel="stylesheet">
+    <link href="mediaqueries.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Page Ado_theme</title>
 </head>
 <body>
-$END$
+<input class="modal-state" id="modal-1" type="checkbox">
+<div class="modal">
+    <label class="modal-bg" for="modal-1"></label>
+    <div class="modal-body contact">
+        <label class="btn-close" for="modal-1">X</label>
+        <h4 class="modal-title">Des Question ?</h4>
+        <form>
+            <div class="form-group ">
+                <label for="name" class="h4">Votre nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Votre email</label>
+                <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="h4 ">Message</label>
+                <textarea id="message" class="form-control message" rows="5"
+                          placeholder="Entrez vos questions ici" required></textarea>
+            </div>
+            <div class="form-group button">
+                <label><input type="submit" value="Envoyer"></label>
+                <label class="paper-btn margin" for="modal-1">Annuler</label>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="page_container">
+    <div class="page_head">
+        <img id="logo_gac" src="src/GRANDIR%20AU%20COLLèGE.png">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div id="carouselpages" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel1-inner">
+                        <div id='carouselpage1' class="carousel-item active">
+                            <img src=" images/CoursTheme300x300.png" alt="Extrait 1">
+                        </div>
+                        <div id='carouselpage2' class="carousel-item">
+                            <img src="images/Famille300x300.png" alt="Extrait 2">
+                        </div>
+                        <div id='carouselpage3' class="carousel-item">
+                            <img src="images/personaliter300x300.png" alt="Extrait 3">
+                        </div>
+                        <div id='carouselpage4' class="carousel-item">
+                            <img src="images/Amitheme300x300.png" alt="Extrait 4">
+                        </div>
+                        <div id='carouselpage5' class="carousel-item">
+                            <img src="images/ecranTheme300x300.png" alt="Extrait 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+                <div id="carousel2pages" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#page1" data-slide-to="0" class="active"></li>
+                        <li data-target="#page2" data-slide-to="1"></li>
+                        <li data-target="#page3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div id='carousel2page1' class="carousel-item active">
+                            <img src=" images/ecranTheme150x150.png" alt="Extrait 1">
+                        </div>
+                        <div id='carousel2page2' class="carousel-item">
+                            <img src="images/CoursTheme150x150.png" alt="Extrait 2">
+                        </div>
+                        <div id='carousel2page3' class="carousel-item">
+                            <img src="images/Famille150x150.png" alt="Extrait 3">
+                        </div>
+                        <div id='carousel2page4' class="carousel-item">
+                            <img src="images/personaliter150x150.png" alt="Extrait 4">
+                        </div>
+                        <div id='carousel2page5' class="carousel-item">
+                            <img src="images/Amitheme150x150.png" alt="Extrait 5">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="carousel6pages" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#page1" data-slide-to="0" class="active"></li>
+                        <li data-target="#page2" data-slide-to="1"></li>
+                        <li data-target="#page3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="container">
+                            <div class="row">
+                                 <div class="col-sm-4"> <button id="prev" onclick="Prev()" class="carousel-control-prev-icon btn-small"
+                                        style="background-color: #224594"></button></div>
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4"> <button id="next" onclick="Next()" class="carousel-control-next-icon btn-small"
+                                        style="background-color: #224594"></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="carousel3pages" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#page1" data-slide-to="0" class="active"></li>
+                        <li data-target="#page2" data-slide-to="1"></li>
+                        <li data-target="#page3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div id='carousel3page1' class="carousel-item active">
+                            <img src=" images/Famille150x150.png" alt="Extrait 1">
+                        </div>
+                        <div id='carousel3page2' class="carousel-item">
+                            <img src="images/personaliter150x150.png" alt="Extrait 2">
+                        </div>
+                        <div id='carousel3page3' class="carousel-item">
+                            <img src="images/Amitheme150x150.png" alt="Extrait 3">
+                        </div>
+                        <div id='carousel3page4' class="carousel-item">
+                            <img src="images/ecranTheme150x150.png" alt="Extrait 4">
+                        </div>
+                        <div id='carousel3page5' class="carousel-item">
+                            <img src="images/CoursTheme150x150.png" alt="Extrait 5">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div id="carousel4pages" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#page1" data-slide-to="0" class="active"></li>
+                        <li data-target="#page2" data-slide-to="1"></li>
+                        <li data-target="#page3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div id='carousel4page1' class="carousel-item active">
+                            <img src=" images/Amitheme150x150.png" alt="Extrait 1">
+                        </div>
+                        <div id='carousel4page2' class="carousel-item">
+                            <img src="images/ecranTheme150x150.png" alt="Extrait 2">
+                        </div>
+                        <div id='carousel4page3' class="carousel-item">
+                            <img src="images/CoursTheme150x150.png" alt="Extrait 3">
+                        </div>
+                        <div id='carousel4page4' class="carousel-item">
+                            <img src="images/Famille150x150.png" alt="Extrait 4">
+                        </div>
+                        <div id='carousel4page5' class="carousel-item">
+                            <img src="images/personaliter150x150.png" alt="Extrait 5">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div id="carousel5pages" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#page1" data-slide-to="0" class="active"></li>
+                        <li data-target="#page2" data-slide-to="1"></li>
+                        <li data-target="#page3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div id='carousel5page1' class="carousel-item active">
+                            <img src=" images/personaliter150x150.png" alt="Extrait 1">
+                        </div>
+                        <div id='carousel5page2' class="carousel-item">
+                            <img src="images/Amitheme150x150.png" alt="Extrait 2">
+                        </div>
+                        <div id='carousel5page3' class="carousel-item">
+                            <img src="images/ecranTheme150x150.png" alt="Extrait 3">
+                        </div>
+                        <div id='carousel5page4' class="carousel-item">
+                            <img src="images/CoursTheme150x150.png" alt="Extrait 4">
+                        </div>
+                        <div id='carousel5page5' class="carousel-item">
+                            <img src="images/Famille150x150.png" alt="Extrait 5">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</script>
+<script type="text/javascript" src="src/contributors.json"></script>
+<script type="text/javascript" src="src/script.js"></script>
+<script type="text/javascript" src="src/carouselslide.js"></script>
 </body>
 </html>

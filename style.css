@@ -277,3 +277,26 @@ body{
     margin-right: 10px;
     color:#41403e;
 }
+.contact{
+   width: 500px;
+}
+
+.espace{
+    width: 10%;
+}
+.message{
+    width: 300px;
+}
+.button{
+
+}
+.envoie{
+    height: 100%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel1-inner .carousel-item img {height: 150px;}
+.carousel1-inner .carousel-item.active img {height: 300px;}
