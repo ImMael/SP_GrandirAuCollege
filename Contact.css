@@ -1,0 +1,122 @@
+.container-fluid{
+    font-size: 3em;
+    line-height: 1;
+    text-align:center;
+    max-width: 800px;
+    width: 700px;
+    margin: 25px;
+    max-height:1400px;
+    position: relative;
+    border:1px solid #d0d0d0;
+    border-top:60px solid #fdfd86;
+    font-size:3em;
+    border-bottom-right-radius: 60px 5px;
+    display:inline-block;
+    background: #ffff88; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+    background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.page_head {
+    display: flex;
+    height: 5%;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.cancel{background-color: #EF74A4;
+
+}
+
+.submit{background-color: #51C7E7;}
+
+.item{font-size: 50px;}
+  .row{justify-content: center;}
+  .h4{font-size: 30px;}
+  textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+#logo_gac{
+    height:50px;
+    border-style:hidden !important;
+}
+head{display: none;}
+
+.container2{
+    display: flex;
+    justify-content: center ;
+}
+
+p{margin:10px;}
+
+.col-sm-4{left: 100%;
+    width: 500px;}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:#51C7E7;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  a{background-image: none !important;}
+
+  .container{display: flex;
+    justify-content: center;
+    width: auto;
+    flex-direction: column;}

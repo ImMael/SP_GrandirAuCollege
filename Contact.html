@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
+<link rel="stylesheet" href="Contact.css">
+
+
+
+<div class="container">
+    <div class="page_head">
+        <img id="logo_gac" src="/Users/boiseauxalexandre/Downloads/GRANDIR_AU_COLLeGE.png">
+        <div class="col-sm-4">  <button id="main" onclick="openNav()">
+            <span >&#9776;Menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="head">
+     
+</div>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Accueil</a>
+    <a href="#">Collèges</a>
+    <a href="#">Ados</a>
+    <a href="#">Prescripteur</a>
+    <a href="#">Parents</a>
+    <a href="#">A propos</a>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        
+    }
+</script>
+<div class="paper container">
+<div id="contact" class="container-fluid">
+    <div class="item">Nous contacter:</div>
+    <form role="form" id="contactForm" onsubmit="submitContactForm(event)">
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Vous êtes :</label>
+                <select name="Qui" id="Qui">
+                    <option value="Collège">Un collège</option>
+                    <option value="Prescripteur">Un prescripteur</option>
+                    <option value="Ado">Un ado</option>
+                    <option value="Parent">Un parent</option>
+                </select>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Votre nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Votre email</label>
+                <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4 ">Message</label>
+            <textarea id="message" class="form-control" rows="5"
+                      placeholder="Entrez votre message ou vos questions ici" required></textarea>
+        </div>
+        <button type="submit" id="form-submit" class="submit" onclick="Submit">Envoyer
+        </button>
+        <button type="button" class="cancel" data-dismiss="modal">Annuler
+        </button>
+
+</form>
+</div>
+</div>
+</html>
