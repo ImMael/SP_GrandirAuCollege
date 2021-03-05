@@ -10,6 +10,7 @@ function Next(){
     $('#carousel3pages').carousel('next');
     $('#carousel4pages').carousel('next');
     $('#carousel5pages').carousel('next');
+    $('#carousel6pages').carousel('next');
 }
 function Prev(){
     $('#carouselpages').carousel('prev');
@@ -17,4 +18,5 @@ function Prev(){
     $('#carousel3pages').carousel('prev');
     $('#carousel4pages').carousel('prev');
     $('#carousel5pages').carousel('prev');
+    $('#carousel6pages').carousel('prev');
 }

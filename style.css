@@ -300,3 +300,6 @@ body{
 
 .carousel1-inner .carousel-item img {height: 150px;}
 .carousel1-inner .carousel-item.active img {height: 300px;}
+.text{
+    justify-content: center;
+}
