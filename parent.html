@@ -1,0 +1,76 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
+    <link rel="stylesheet" href="parents.css">
+    <title>parent</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Accueil</a>
+        <a href="#">Collèges</a>
+        <a href="#">Ados</a>
+        <a href="#">Prescripteur</a>
+        <a href="#">Parents</a>
+        <a href="#">A propos</a>
+    </div>
+    <div class="col-sm-4">  <button id="main">
+        <span onclick="openNav()">&#9776; Menu</span>
+    </button>
+  </div>
+  <div class='logo'>
+  <img style='border:0' src="https://cdn.discordapp.com/attachments/811881452924043284/816656262863257600/GRANDIR_AU_COLLeGE.png" alt="logo Grandir au collège" >
+  </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            ;
+        }
+    
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            ;
+        }
+    </script>
+    
+    <div class="Container paper">
+    <h1>laïus</h1>
+
+    <div class=flex>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptate corrupti autem tenetur incidunt
+    error quo voluptas reiciendis, corporis numquam optio id minus. Autem asperiores veritatis, recusandae repellendus odit assumenda?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ab? Vero, provident id repellendus minus
+             commodi doloremque voluptas tempora quis mollitia ut eius! Eius odit maiores fugit, error recusandae fugiat!</p>
+            </div>
+            
+                  
+
+
+<h2 style='text-align: center' >où trouver le livre </h2>
+<p>Vous pouvez trouvez le livre sur les différentes plateformes:
+la Fnac,
+Cultura,
+et place des libraires
+</p>
+<div class="img">
+    <a href="https://livre.fnac.com/a14946368/Marie-Christelle-Cochet-Grandir-au-college#omnsearchpos=1" target="_blank" >
+    <img style='width:90px'class='img' src="data:image/png;base64,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" alt="logo fnac" >
+    </a>
+
+    <a href="https://www.cultura.com/grandir-au-college-9782379791901.html" target="_blank" >
+        <img style='width:90px'class='img' src=" https://th.bing.com/th/id/OIP.lzE7VuPG1Cnu_m6IgqoOFQAAAA?w=148&h=134&c=7&o=5&dpr=1.25&pid=1.7" alt="logo Cultura" >
+        </a>
+
+        <a href="https://www.placedeslibraires.fr/livre/9782379791901-grandir-au-college-marie-christelle-cochet/" target="_blank" >
+            <img style='width:90px'class='img' src="https://www.hadopi.fr/sites/default/files/styles/medium/public/fields/platform/logos/v9hCWdEJ_400x400_0.jpg?itok=4Zg1B_Ud" alt="logo place des libraires" >
+            </a>
+     </div>
+
+</body>
+</html>
