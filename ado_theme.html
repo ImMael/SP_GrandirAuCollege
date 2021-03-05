@@ -46,12 +46,15 @@
 </div>
 <div class="page_container">
     <div class="page_head">
-        <img id="logo_gac" src="src/GRANDIR%20AU%20COLLèGE.png">
+        <div class="col-sm-2">  <button id="main" onclick="openNav()">
+            <span >&#9776; Menu</span>
+        </button>
+        </div>
+       <div class ="col-sm-4"> <img id="logo_gac" src="src/GRANDIR%20AU%20COLLèGE.png"></div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <div id="carouselpages" class="carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner carousel1-inner">
@@ -265,6 +268,16 @@
     </div>
 
 </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Accueil</a>
+    <a href="#">Collèges</a>
+    <a href="#">Ados</a>
+    <a href="#">Prescripteur</a>
+    <a href="#">Parents</a>
+    <a href="#">A propos</a>
+
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -280,5 +293,22 @@
 <script type="text/javascript" src="src/contributors.json"></script>
 <script type="text/javascript" src="src/script.js"></script>
 <script type="text/javascript" src="src/carouselslide.js"></script>
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.querySelector('#main').style.display = "none";
+        ;
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.querySelector('#main').style.display = "flex";
+        ;
+    }
+</script>
 </body>
 </html>
